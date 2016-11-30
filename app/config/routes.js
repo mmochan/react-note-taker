@@ -5,7 +5,7 @@ import Profile from '../components/Profile';
 
 import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 
-module.exports = (
+export default (
   <Route path="/" component={Main}>
     <Router history={hashHistory} />
     <Route path="profile/:username" component={Profile} />
