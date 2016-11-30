@@ -8,6 +8,7 @@ import getGithubInfo from '../utils/helpers';
 
 const base = Rebase.createClass('https://github-note-taker-2a7f0.firebaseio.com');
 
+
 class Profile extends React.Component {
   constructor(props) {
     super();
@@ -40,7 +41,6 @@ class Profile extends React.Component {
 
     getGithubInfo(username)
       .then(function(data){
-        console.log(data.repos)
         this.setState({
           bio: data.bio,
           repos: data.repos
